@@ -49,7 +49,16 @@ def eratosthenes(n):
 		c = c + 1
 		d = c + 1
 
-	print(myList, "\n")
+		i = 0
+	while i < len(myList):
+		if n%myList[i] == 0 and n != myList[i]:
+			print(n, "is not prime")
+			i = len(myList) + 1
+		else:
+			i = i + 1
+
+	if i == len(myList):
+		print(n, "is prime")
 
 eratosthenes(5)
 eratosthenes(20)
