@@ -76,4 +76,21 @@ def prop9():
 
 prop9()
 
+# determines number of twin prime pairs in list of generated primes
+def twins():
+	# primes generated using sieve of Eratosthenes from Part 2
+	primes = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97]   
+	i = 0
+	j = 0  
+
+	while i < len(primes) - 1:
+		if (2 + primes[i]) == primes[i + 1]:
+			j = j + 1
+		i = i + 1
+
+	print(j, "twin primes")
+
+twins()
+
+
 
