@@ -21,11 +21,6 @@ def trial(n):
 	else:
 		print(n, "is not prime \n") 
 
-trial(8)
-trial(827)
-trial(83)
-
-
 # 3.2: Using Sieve of Eratosthenes.
 def eratosthenes(n):
 
@@ -48,7 +43,7 @@ def eratosthenes(n):
 		c = c + 1
 		d = c + 1
 
-		i = 0
+	i = 0
 	while i < len(myList):
 		if n%myList[i] == 0 and n != myList[i]:
 			print(n, "is not prime")
@@ -58,10 +53,7 @@ def eratosthenes(n):
 
 	if i == len(myList):
 		print(n, "is prime")
-
-eratosthenes(5)
-eratosthenes(20)
-eratosthenes(37)
+		
 
 # 3.3: Fermat little theorem BONUS.
 def flt(p):
@@ -80,8 +72,3 @@ def flt(p):
 		print(p, "is not prime \n")
 	else:
 		print(p, "is prime \n")
-
-flt(3)
-flt(4)
-flt(19)
-flt(23)
