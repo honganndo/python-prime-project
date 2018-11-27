@@ -2,7 +2,6 @@
 # functions using the two following approaches:
 
 import math
-import numpy as np
 
 # 3.1: Trial division: For an input n, check if there is a prime number between 2 
 # and √n that divides n
