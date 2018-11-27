@@ -5,8 +5,6 @@
 import numpy as np
 
 def gcd(a, b):
-     #   table = np.array([["a","b","r"]])
-
         x = a
         y = b
 
@@ -18,7 +16,6 @@ def gcd(a, b):
 
         while r >= 0:
                 print("a =", a, "b =", b, "r =", r)
-          #      np.append([a,b,r])
                 r = a % b
 
                 if r != 0:
