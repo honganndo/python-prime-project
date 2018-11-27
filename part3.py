@@ -10,16 +10,16 @@ def trial(n):
 	a = 2
 	b = math.ceil(math.sqrt(n))
 
-	while a < b:
+	while a <= b:
 		if (n%a == 0):
-			a = b + 1
+			a = b + 2
 		else:
 			a = a + 1
 
-	if a == b:
-		print(n, "is a prime number \n")
+	if a == b + 1:
+		print(n, "is prime \n")
 	else:
-		print(n, "is not prime \n") 
+		print(n, "is not prime \n")
 
 # 3.2: Using Sieve of Eratosthenes.
 def eratosthenes(n):
