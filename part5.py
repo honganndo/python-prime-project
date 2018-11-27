@@ -14,24 +14,61 @@
 # this generates the first 1.5 million prime numbers (23,879,519 is 1.5 millionth prime)
 primes = sieve(23879519) 
 
-def prop(n):
+def prop1():
 	primes = sieve(23879519)
-
-	primen = []
+	prime1 = []
 	i = 0
 	
 	while i < len(primes):
-		if primes[i]%10 == n:
-			primen.append(primes[i])
+		if primes[i]%10 == 1:
+			prime1.append(primes[i])
 		i = i + 1
 
-	c = len(primen)/len(primes)
-	print(c, "of the first 1.5 million primes end in," n)
+	c = len(prime1)/len(primes)
+	print(c, "of the first 1.5 million primes end in," 1)
+prop1()
 
-prop(1)
-prop(3)
-prop(7)
-prop(9)
+def prop3():
+	primes = sieve(23879519)
+	prime3 = []
+	i = 0
+	
+	while i < len(primes):
+		if primes[i]%10 == 3:
+			prime3.append(primes[i])
+		i = i + 1
+
+	c = len(prime1)/len(primes)
+	print(c, "of the first 1.5 million primes end in," 3)	
+prop3()
+
+def prop7():
+	primes = sieve(23879519)
+	prime7 = []
+	i = 0
+	
+	while i < len(primes):
+		if primes[i]%10 == 1:
+			prime7.append(primes[i])
+		i = i + 1
+
+	c = len(prime1)/len(primes)
+	print(c, "of the first 1.5 million primes end in," 7)
+prop7()
+
+def prop9():
+	primes = sieve(23879519)
+	prime9 = []
+	i = 0
+	
+	while i < len(primes):
+		if primes[i]%10 == 1:
+			prime9.append(primes[i])
+		i = i + 1
+
+	c = len(prime9)/len(primes)
+	print(c, "of the first 1.5 million primes end in," 9)
+prop9()
 
 # 5.3 Calculates proportions of primes ending in some digit a followed by primes ending in some digit b
 def ends(a,b):     
