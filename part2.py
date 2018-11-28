@@ -27,7 +27,7 @@ def generatenums(f, num):
 
     string = str(len(numbers)) + " primes generated" + "\n"
     f.write(string)
-    f.write("Runtime: %.6s sec for primes up to %s" % ((time.time() - start_time), num))
+    f.write("Runtime: %.6s sec for primes up to %s \n" % ((time.time() - start_time), num))
 
 
 

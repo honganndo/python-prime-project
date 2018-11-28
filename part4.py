@@ -1,6 +1,7 @@
 import math
 
 def trialdivision(num):
+    originalnum = num
     factor = []
     while num % 2 == 0:
         factor.append(2)
@@ -11,5 +12,6 @@ def trialdivision(num):
             num = num / i
     if num > 2:
         factor.append(int(num))
+    print("prime factorization for", originalnum, ":")
     print(*factor, sep = " ")
 

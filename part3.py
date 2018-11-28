@@ -67,16 +67,13 @@ def eratosthenes(n):
 # 3.3: Fermat little theorem BONUS.
 def flt(p):
 	a = 1
-
 	while a < p:
 		if (a**p)%p != a%p:
 		#	print("not prime, a = ", a)
 			a = p + 20
-
 		else:
 	#		print("could be prime: a =", a)
 			a = a + 1
-
 	if a > p + 10:
 		print(p, "is not prime \n")
 	else:
