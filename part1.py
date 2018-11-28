@@ -2,8 +2,6 @@
 # 1: Euclid's Algorithm. The below program uses Euclid's algorithm to compute
 # the GCD of two integers
 
-import numpy as np
-
 def gcd(a, b):
         x = a
         y = b

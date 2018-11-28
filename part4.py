@@ -1,24 +1,15 @@
-import time
+import math
 
 def trialdivision(num):
-    i = 1
-    while(i<=num):
-        k=0
-        if(num%i==0):
-            j=1
-            while(j<=i):
-                if(i%j==0):
-                    k=k+1
-                j=j+1
-            if(k==2):
-                print(i)
-        i=i+1
+    factor = []
+    while num % 2 == 0:
+        factor.append(2)
+        num = num / 2
+    for i in range(3, (int(math.sqrt(num)) + 1), 2):
+        while num % i == 0:
+            factor.append(int(i))
+            num = num / i
+    if num > 2:
+        factor.append(int(num))
+    print(*factor, sep = " ")
 
-def main():
-    start_time = time.time()
-    userinput = 23216544
-    trialdivision(userinput)
-
-
-if __name__ == '__main__':
-    main()

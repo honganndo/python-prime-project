@@ -1,6 +1,5 @@
 import time
 
-
 def printtable(file, table, space):
     for item in table:
         for num in item:
@@ -29,37 +28,7 @@ def generatenums(f, num):
     string = str(len(numbers)) + " primes generated" + "\n"
     f.write(string)
     f.write("Runtime: %.6s sec for primes up to %s" % ((time.time() - start_time), num))
-    timetable(f, sieve, 1000000)
 
-def timetable(f, function, *args):
-    i = 1
-    numbers = [("digits", "runtime (sec)")]
-    item = args[0]
-    while (i <= item):
-        starttime = time.time()
-        function(i)
-        leftovertime = time.time() - starttime
-        numbers.append((i, '%.9f' % leftovertime))
-        i = i*10
-    f.write("\n\n")
-    for ele1, ele2 in numbers:
-        f.write("{:<14}{:<11}".format(ele1, ele2))
-        f.write("\n")
-
-
-def main():
-    userinput = 1000
-    f = open('output.txt', 'w')
-    start_time = time.time()
-    amount = generatenums(f, userinput)
-    string = str(amount) + " primes generated" + "\n"
-    f.write(string)
-    f.write("Runtime: %.6s sec for primes up to %s" % ((time.time() - start_time),userinput))
-    timetable(f, sieve, 1000000)
-    f.close()
-
-if __name__ == '__main__':
-    main()
 
 
 

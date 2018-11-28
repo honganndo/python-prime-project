@@ -1,9 +1,9 @@
-# 3: Primality Test: Implement three primality test 
+# 3: Primality Test: Implement three primality test
 # functions using the two following approaches:
 
 import math
 
-# 3.1: Trial division: For an input n, check if there is a prime number between 2 
+# 3.1: Trial division: For an input n, check if there is a prime number between 2
 # and √n that divides n
 def trial(n):
 
@@ -70,11 +70,11 @@ def flt(p):
 
 	while a < p:
 		if (a**p)%p != a%p:
-			print("not prime, a = ", a)
+		#	print("not prime, a = ", a)
 			a = p + 20
 
 		else:
-			print("could be prime: a =", a)
+	#		print("could be prime: a =", a)
 			a = a + 1
 
 	if a > p + 10:
