@@ -65,6 +65,7 @@ def prop9(primes):
 def ends(primes, a, b):
     i = 0
     j = 0
+    k = 0
 
     while i < len(primes) - 1:
         if primes[i]%10 == a:
