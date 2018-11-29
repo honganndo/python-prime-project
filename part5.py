@@ -71,7 +71,7 @@ def ends(primes, a, b):
         if primes[i]%10 == a:
 		k = k + 1
         if primes[i] % 10 == a and primes[i + 1] % 10 == b:
-            j = j + 1
+            	j = j + 1
         i = i + 1
 
     d = j / k
