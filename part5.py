@@ -65,13 +65,16 @@ def prop9(primes):
 def ends(primes, a, b):
     i = 0
     j = 0
+    k = 0
 
     while i < len(primes) - 1:
+        if primes[i]%10 == a:
+			k = k + 1
         if primes[i] % 10 == a and primes[i + 1] % 10 == b:
             j = j + 1
         i = i + 1
 
-    d = j / len(primes)
+    d = j / k
     print("%.7s" % d, "of the first 1 million primes ending with", a, "are followed by prime ending with", b)
 
 # determines number of twin prime pairs in list of generated primes
