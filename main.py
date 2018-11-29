@@ -28,8 +28,10 @@ def timetable(f, function, *args):
             numbers.append((s, '%.9f' % leftovertime))
         i = i*10
     f.write("\n")
+    max = len(str(i))
+
     for ele1, ele2 in numbers:
-        f.write("{:<23}{:<15}".format(ele1, ele2))
+        f.write("{:<30}{:<15}".format(ele1, ele2))
         f.write("\n")
 
 def main():
@@ -51,7 +53,7 @@ def main():
             numinput2 = input("Enter your second number: ")
             gcd(int(numinput1), int(numinput2))
             file.write("GCD Table")
-            timetable(file, gcd, 100000000, 100000000)
+            timetable(file, gcd, 1000000000000,100000000000000)
         elif (choice == '2'):
             print("You have chosen prime number generation")
             numinput = input("Enter a integer n to generate primes up to: ")
@@ -70,7 +72,7 @@ def main():
                 num = input("Enter number to check: ")
                 trial(int(num))
                 file.write("Primality - Trial Division Table")
-                timetable(file, trial, 100000000000)
+                timetable(file, trial, 1000000000000000000000000000000)
             elif (userinput == '2'):
                 num = input("Enter number to check: ")
                 eratosthenes(int(num))
