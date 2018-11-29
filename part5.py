@@ -74,7 +74,7 @@ def ends(primes, a, b):
             j = j + 1
         i = i + 1
 
-    d = j / len(primes)
+    d = j / k
     print("%.7s" % d, "of the first 1 million primes ending with", a, "are followed by prime ending with", b)
 
 # determines number of twin prime pairs in list of generated primes
