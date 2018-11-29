@@ -67,6 +67,8 @@ def ends(primes, a, b):
     j = 0
 
     while i < len(primes) - 1:
+        if primes[i]%10 == a:
+            k = k + 1
         if primes[i] % 10 == a and primes[i + 1] % 10 == b:
             j = j + 1
         i = i + 1
